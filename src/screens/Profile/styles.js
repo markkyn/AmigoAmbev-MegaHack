@@ -4,7 +4,7 @@ import { colors } from '../../styles';
 
 export const Body = styled.ScrollView`
     flex:1;
-    background-color: ${colors.primaryDark};
+    background-color: ${colors.backgroundDark};
 `;
 
 export const TopView = styled.View`
@@ -40,4 +40,35 @@ export const CuponsView = styled.View`
     
     width: 100%;
     margin-top: 30px;
+`;
+
+export const NameLabel = styled.Text`
+    font-size: 20;
+    color: #262626;
+`;
+
+export const LocationLabel = styled.Text`
+    color: #999;
+`;
+
+export const DataLabel = styled.Text`
+    text-align: center;
+    font-size: 16;
+    font-weight: bold;
+    color: #262626;
+`;
+
+export const NumberLabel = styled.Text`
+    font-size: 24;
+    color: #262626; 
+`;
+
+export const SectionLabel = styled.Text`
+    align-self: center;
+    text-align: center;
+    width:140px;
+    font-size: 30px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border-bottom-width:2px
 `;
