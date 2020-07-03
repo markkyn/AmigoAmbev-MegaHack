@@ -16,10 +16,14 @@ export const TopView = styled.View`
 export const AvatarView = styled.View`
     width: 100%;
     align-items: center;
+    padding-bottom: 10px;
 `;
 export const DataView = styled.View`
     width: 100%;
-    padding:70px 20px;
+    padding:20px 20px;
+    padding-top: 10px;
+    border-top-width: 0.2px;
+    border-color: #999;
     flex-direction: row;
     align-items: center;
 `;
@@ -59,7 +63,7 @@ export const DataLabel = styled.Text`
 `;
 
 export const NumberLabel = styled.Text`
-    font-size: 24;
+    font-size: 30;
     color: #262626; 
 `;
 
