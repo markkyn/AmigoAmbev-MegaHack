@@ -4,6 +4,7 @@ import { View, Text, StatusBar } from 'react-native';
 import { Avatar } from 'react-native-elements';
 
 import { Ionicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 
 import { Wrapper, Logo } from './styles';
 
@@ -22,7 +23,7 @@ export default function Header({statusBarColor}) {
             <Wrapper
                 elevation={3}
             >
-                <Ionicons name="ios-arrow-back" size={34} color={colors.background} style={{ width: 34 }} />
+                <MaterialCommunityIcons name="qrcode-scan" size={34} color={colors.background} style={{ width: 34 }}/>
                 <Logo
                     source={logo}
                     tintColor={colors.background}
@@ -31,7 +32,7 @@ export default function Header({statusBarColor}) {
                     rounded
                     source={avatar}
                     containerStyle={{borderColor:colors.background, borderWidth: 1}}
-                ></Avatar>
+                />
             </Wrapper>
         </>
     )
