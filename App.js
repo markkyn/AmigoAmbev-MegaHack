@@ -1,11 +1,9 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 
-import Login from './src/screens/Login'
-import Profile from './src/screens/Profile'
-
-
+import { SwitchRouter } from './src/navigation'
 export default function App() {
   return (
-    <Login></Login>
+    <SwitchRouter></SwitchRouter>
   );
 }

@@ -47,7 +47,7 @@ export const CuponsView = styled.View`
 `;
 
 export const NameLabel = styled.Text`
-    font-size: 20;
+    font-size: 20px;
     color: #262626;
 `;
 
@@ -57,13 +57,13 @@ export const LocationLabel = styled.Text`
 
 export const DataLabel = styled.Text`
     text-align: center;
-    font-size: 16;
+    font-size: 16px;
     font-weight: bold;
     color: #262626;
 `;
 
 export const NumberLabel = styled.Text`
-    font-size: 30;
+    font-size: 30px;
     color: #262626; 
 `;
 

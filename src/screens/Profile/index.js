@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 
 import { View, Text } from 'react-native';
 import { Avatar, ListItem } from 'react-native-elements';
@@ -11,33 +11,39 @@ import Header from '../../components/Header'
 
 import ambevAvatar from '../../assets/avatar.jpg';
 
-export default function Profile() {
+export default function Profile({ navigation }) {
 
     const cupomArray = [
         {
             name: 'Retro Bar',
-            description: 'Você tem um Cupom de R$17,00 reais',
+            description: 'Você tem um Cupom de R$17,00 ',
             avatar: 'https://www.logaster.com.br/blog/wp-content/uploads/sites/6/2019/03/t_Retro-Burger-Bar-Logo_1.png'
         },
         {
             name: 'Tops Bar',
-            description: 'Você tem um Cupom de R$10,00 reais',
+            description: 'Você tem um Cupom de R$10,00 ',
             avatar: 'https://i.pinimg.com/originals/62/d6/90/62d690a2857600e189a72963659bb9f6.jpg'
         },
         {
             name: 'Bar do Juarez',
-            description: 'Você tem um Cupom de R$19,00 reais',
+            description: 'Você tem um Cupom de R$19,00 ',
             avatar: 'https://static.wixstatic.com/media/7201a9_394287cd09314c90a77b61beeb484679~mv2_d_2466_2176_s_2.png/v1/fit/w_2500,h_1330,al_c/7201a9_394287cd09314c90a77b61beeb484679~mv2_d_2466_2176_s_2.png'
         },
         {
             name: 'Lorem Ipsum Vinhos',
-            description: 'Você tem um Cupom de R$3,00 reais',
+            description: 'Você tem um Cupom de R$10,00 ',
             avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHhYmNfeRYHLjKlRhMhPlgYkkXPYfZPvVY3g&usqp=CAU'
         }
     ]
+
     return (
         <AppContainer>
-            <Header />
+            <Header
+                onIconPress={() => navigation.navigate('Home')}
+                onLogoPress={() => navigation.navigate('Home')}
+                onProfilePress={() => navigation.navigate('Profile')}
+                Icon='home'
+            />
             <Body>
                 <TopView>
 

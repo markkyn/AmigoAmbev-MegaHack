@@ -11,7 +11,7 @@ import { colors, metrics } from '../../styles'
 
 import Logo from '../../assets/LogoAmigo.png'
 
-export default function Login() {
+export default function Login({ navigation }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -75,6 +75,7 @@ export default function Login() {
                         titleStyle={{ color: colors.primary, fontSize: 18 }}
                         buttonStyle={{ backgroundColor: 'yellow' }}
                         containerStyle={{ marginBottom: 60 }}
+                        onPress = {()=>{navigation.navigate('Home')}}
                     />
                     <Label
                         style={{ alignSelf: 'center', marginTop: 30 }}
