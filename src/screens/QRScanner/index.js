@@ -19,7 +19,6 @@ export default function QRScreen() {
             const { status } = await BarCodeScanner.requestPermissionsAsync();
             if (status === 'granted') {
                 setPermission(true);
-
             }
         })()
     }, []);
@@ -55,8 +54,6 @@ export default function QRScreen() {
                 style={StyleSheet.absoluteFillObject}
                 onBarCodeScanned={scanned ? undefined : handleScan}
             />
-
-
             <Overlay
                 isVisible={isVisible}
                 onBackdropPress={() => {

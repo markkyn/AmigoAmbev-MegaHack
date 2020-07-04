@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { StatusBar, View, Text } from 'react-native';
 import { Svg, Path } from 'react-native-svg';
-import { Input,Button } from 'react-native-elements';
+import { Input, Button } from 'react-native-elements';
 
 import { AppContainer } from '../../components/AppContainer'
 
@@ -77,10 +77,10 @@ export default function Login() {
                         containerStyle={{ marginBottom: 60 }}
                     />
                     <Label
-                        style={{alignSelf:'center', marginTop: 30}}
+                        style={{ alignSelf: 'center', marginTop: 30 }}
                     >Não tem uma Conta? Inscreva-se</Label>
                 </MainView>
-                
+
             </AppContainer>
 
         </>
