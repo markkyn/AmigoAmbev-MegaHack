@@ -65,29 +65,14 @@ export default function Home({ navigation }) {
                     />
                 </View>
 
-                <Button
-                    iconLeft
-                    buttonStyle={{ borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary, paddingBottom: 10, marginBottom: 5 }}
-                    titleStyle={{ color: colors.primaryDark, fontSize: 15, fontWeight: 'bold' }}
-                    icon={<MaterialCommunityIcons name="beer" size={18} color={colors.primaryDark} />}
-                    title='Deixa com Ambev'
-                    onPress={() => { console.log('pressionado') }}
-                />
-                <Button
-                    iconLeft
-                    buttonStyle={{ borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary, marginBottom: 5 }}
-                    titleStyle={{ color: colors.primaryDark, fontSize: 15, fontWeight: 'bold' }}
-                    title='AmbevStars'
-                    icon={<AntDesign name="star" size={18} color={colors.primaryDark} />}
-                    onPress={() => { console.log('pressionado') }}
-                />
+
                 <Button
                     iconLeft
                     buttonStyle={{ borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary }}
                     titleStyle={{ color: colors.primaryDark, fontSize: 15, fontWeight: 'bold' }}
                     title='Encontre a bebida ideal'
-                    icon={<AntDesign name="star" size={18} color={colors.primaryDark} />}
-                    onPress={() => { console.log('pressionado') }}
+                    icon={<MaterialCommunityIcons name="beer" size={25} color={colors.primaryDark} style={{ marginRight: 10 }} />}
+                    onPress={() => { navigation.navigate('BeerDesc') }}
                 />
             </AppContainer>
         </>
