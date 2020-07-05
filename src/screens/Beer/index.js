@@ -20,7 +20,6 @@ export default function BeerDesc({ navigation }) {
         <AppContainer>
             <Header
                 onIconPress={() => navigation.navigate('Home')}
-                onProfilePress={() => navigation.navigate('Profile')}
                 Icon='home'
             ></Header>
             <ScrollView>
@@ -52,10 +51,11 @@ export default function BeerDesc({ navigation }) {
                                 </View>
                             </View>
                             <Button
-                                title='Encontre perto de vocês!'
+                                title='Encontre perto de você!'
                                 containerStyle={{ marginTop: 40, borderRadius: 20 }}
                                 buttonStyle={{ backgroundColor: colors.yellow }}
                                 titleStyle={{ color: '#262626' }}
+                                onPress={()=>{navigation.navigate('MapScreen')}}
                             />
                         </TextView>
 

@@ -11,12 +11,14 @@ import Profile from '../screens/Profile';
 import QRScanner from '../screens/QRScanner';
 import Home from '../screens/Home';
 import BeerDesc from '../screens/Beer';
+import MapScreen from '../screens/Map';
 
 export const SwitchRouter = createAppContainer(
     createSwitchNavigator({
-        BeerDesc,
         Login,
         Profile,
         QRScanner, 
-        Home
+        Home,
+        MapScreen,
+        BeerDesc,
     }))

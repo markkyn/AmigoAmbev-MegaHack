@@ -74,6 +74,14 @@ export default function Home({ navigation }) {
                     icon={<MaterialCommunityIcons name="beer" size={25} color={colors.primaryDark} style={{ marginRight: 10 }} />}
                     onPress={() => { navigation.navigate('BeerDesc') }}
                 />
+                <Button
+                    iconLeft
+                    buttonStyle={{ borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary, marginTop: 10 }}
+                    titleStyle={{ color: colors.primaryDark, fontSize: 15, fontWeight: 'bold' }}
+                    title='Ambev Próximo de Você'
+                    icon={<MaterialCommunityIcons name="star" size={25} color={colors.primaryDark} style={{ marginRight: 10 }} />}
+                    onPress={() => { navigation.navigate('MapScreen') }}
+                />
             </AppContainer>
         </>
     )
