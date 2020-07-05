@@ -17,14 +17,17 @@ const DATA = [
     {
         id: 1,
         picURI: 'https://instagram.faju2-1.fna.fbcdn.net/v/t51.2885-15/fr/e15/p1080x1080/106063739_607661873211131_4177645860607252040_n.jpg?_nc_ht=instagram.faju2-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=DAwH7BqaB-kAX-xnpaY&oh=abf55ee19e2c2363d15ce5daaf1024da&oe=5F02A637',
+        title: "Verificado Junho acabou, mas o #OrgulhoNãoPara! No #tbt de hoje, queremos celebrar as conquistas que tivemos na semana passada."
     },
     {
         id: 2,
         picURI: 'https://instagram.faju2-1.fna.fbcdn.net/v/t51.2885-15/e35/106157982_703205367183384_1072728688922152136_n.jpg?_nc_ht=instagram.faju2-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=tZUawEwZBqgAX-kprcY&oh=bfd6bc909ce241c08c8a56e1d8d0fd89&oe=5F28D389',
+        title: "A crise do COVID-19 trouxe vários aprendizados na gestão de pessoas. Aqui na Ambev, ficou claro que a criatividade e energia nos diversos projetos que temos feito ultimamente"
     },
     {
         id: 3,
         picURI: 'https://instagram.faju2-1.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/106393075_179546073530777_1128636140314743013_n.jpg?_nc_ht=instagram.faju2-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=ObSmEt3B3fAAX89DHBY&oh=39a6df3e7be6d7c3000f7e8bb0ed9349&oe=5F296E24',
+        title: "A gente da Ambev realizou diversas ações de engajamento para todo o nosso time, para manter mente e corpo ativos na quarentena."
     },
 ];
 
@@ -47,12 +50,15 @@ export default function Home({ navigation }) {
                         Novidades Ambev
                     </Text>
                     <FlatList
-                        style={{ height: 260, paddingLeft: 20 }}
+                        style={{ paddingLeft: 20, marginBottom: 10 }}
                         data={DATA}
                         horizontal
                         renderItem={({ item }) =>
-                            <View elevation={3}>
-                                <Image source={{ uri: item.picURI }} style={{ height: 200, width: 230, margin: 20, borderRadius: 20, borderColor: '#999', borderWidth: 1 }} />
+                            <View elevation={3} style={{ alignItems: "center" }}>
+                                <Image source={{ uri: item.picURI }} style={{ height: 200, width: 260, margin: 20, marginBottom: 10, borderRadius: 20, borderColor: '#999', borderWidth: 1 }} />
+                                <Text
+                                    style={{ width: 230, textAlign: 'center' }}
+                                >{item.title}</Text>
                             </View>
                         }
                         keyExtractor={item => item.id}
@@ -61,7 +67,7 @@ export default function Home({ navigation }) {
 
                 <Button
                     iconLeft
-                    buttonStyle={{ width: 150, borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary }}
+                    buttonStyle={{ borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary, paddingBottom: 10, marginBottom: 5 }}
                     titleStyle={{ color: colors.primaryDark, fontSize: 15, fontWeight: 'bold' }}
                     icon={<MaterialCommunityIcons name="beer" size={18} color={colors.primaryDark} />}
                     title='Deixa com Ambev'
@@ -69,7 +75,7 @@ export default function Home({ navigation }) {
                 />
                 <Button
                     iconLeft
-                    buttonStyle={{ width: 150, borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary }}
+                    buttonStyle={{ borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary }}
                     titleStyle={{ color: colors.primaryDark, fontSize: 15, fontWeight: 'bold' }}
                     title='AmbevStars'
                     icon={<AntDesign name="star" size={18} color={colors.primaryDark} />}
