@@ -75,9 +75,17 @@ export default function Home({ navigation }) {
                 />
                 <Button
                     iconLeft
-                    buttonStyle={{ borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary }}
+                    buttonStyle={{ borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary, marginBottom: 5 }}
                     titleStyle={{ color: colors.primaryDark, fontSize: 15, fontWeight: 'bold' }}
                     title='AmbevStars'
+                    icon={<AntDesign name="star" size={18} color={colors.primaryDark} />}
+                    onPress={() => { console.log('pressionado') }}
+                />
+                <Button
+                    iconLeft
+                    buttonStyle={{ borderRadius: 30, backgroundColor: colors.background, borderWidth: 3, borderColor: colors.primary }}
+                    titleStyle={{ color: colors.primaryDark, fontSize: 15, fontWeight: 'bold' }}
+                    title='Encontre a bebida ideal'
                     icon={<AntDesign name="star" size={18} color={colors.primaryDark} />}
                     onPress={() => { console.log('pressionado') }}
                 />
