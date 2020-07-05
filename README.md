@@ -56,11 +56,11 @@ yarn install
 </tr>
 <tr>
 <td>Kaynan Santana</td>
-<td>Marketing</td>
+<td>UX/UI</td>
 </tr>
 <tr>
 <td>Analice Costa</td>
-<td>UI/UX</td>
+<td>Marketing</td>
 </tr>
 </tbody>
 </table>
