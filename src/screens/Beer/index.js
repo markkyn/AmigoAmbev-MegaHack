@@ -20,6 +20,7 @@ export default function BeerDesc({ navigation }) {
         <AppContainer>
             <Header
                 onIconPress={() => navigation.navigate('Home')}
+                onProfilePress={()=> navigation.navigate('Profile')}
                 Icon='home'
             ></Header>
             <ScrollView>
