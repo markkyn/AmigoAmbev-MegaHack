@@ -21,15 +21,18 @@ export default function Login({ navigation }) {
     const inputValidation = () => {
         if (email == '') {
             setEmailError('Email Inválido');
+            return
         }
         if (password == '' || password.length < 6) {
             setPassError('Senha Inválida')
+            return
         }
+        navigation.navigate('Home')
     }
 
     return (
         <>
-            <StatusBar backgroundColor='white' barStyle='dark-content' />
+            <StatusBar backgroundColor={colors.background} barStyle='dark-content' />
             <AppContainer>
                 <LogoView>
                     <LogoImg source={Logo} tintColor={colors.primary} />
@@ -75,7 +78,9 @@ export default function Login({ navigation }) {
                         titleStyle={{ color: colors.primary, fontSize: 18 }}
                         buttonStyle={{ backgroundColor: 'yellow' }}
                         containerStyle={{ marginBottom: 60 }}
-                        onPress = {()=>{navigation.navigate('Home')}}
+                        onPress={() => {
+                            inputValidation();
+                        }}
                     />
                     <Label
                         style={{ alignSelf: 'center', marginTop: 30 }}
