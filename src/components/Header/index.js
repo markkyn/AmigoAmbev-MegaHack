@@ -14,7 +14,7 @@ import { colors } from '../../styles';
 import logo from '../../assets/amigoHeader.png'
 import avatar from '../../assets/avatar.jpg';
 
-export default function Header({ statusBarColor, onIconPress, onProfilePress, onLogoPress, Icon }) {
+export default function Header({ statusBarColor, onIconPress, onProfilePress, onLogoPress, Icon, paddingBar }) {
     return (
         <>
             <StatusBar
@@ -23,8 +23,9 @@ export default function Header({ statusBarColor, onIconPress, onProfilePress, on
             />
             <Wrapper
                 elevation={3}
+                style={{ marginTop: (paddingBar ? paddingBar : 0) }}
             >
-                <FontAwesome name={Icon ? Icon :'qrcode'} size={34} color={colors.background} style={{ width: 34 }}
+                <FontAwesome name={Icon ? Icon : 'qrcode'} size={34} color={colors.background} style={{ width: 34 }}
                     onPress={onIconPress}
                 />
 
@@ -32,7 +33,7 @@ export default function Header({ statusBarColor, onIconPress, onProfilePress, on
                     onPress={onLogoPress}
                 >
                     <Logo
-                        style={{tintColor:colors.background }}
+                        style={{ tintColor: colors.background }}
                         source={logo}
                         tintColor={colors.background}
                     />

@@ -38,6 +38,7 @@ export default function QRScreen({ navigation }) {
     return (
         <>
             <Header
+                paddingBar={Platform.OS === 'ios' ? 30 : 0}
                 onIconPress={() => navigation.navigate('Home')}
                 onProfilePress={() => navigation.navigate('Profile')}
                 Icon='home'
@@ -74,7 +75,7 @@ export default function QRScreen({ navigation }) {
                     }}
                 >
                     <View
-                        style={{ height: 400, width: 320, padding: 10, alignItems:"center" }}
+                        style={{ height: 400, width: 320, padding: 10, alignItems: "center" }}
                     >
                         {erro == ''
                             ? <Text
@@ -94,7 +95,7 @@ export default function QRScreen({ navigation }) {
                             size='xlarge'
                         />
                         <Button
-                            containerStyle={{marginTop:30}}
+                            containerStyle={{ marginTop: 30 }}
                             title='Voltar para Pagina Inicial'
                             onPress={() => navigation.navigate('Home')}
                         />

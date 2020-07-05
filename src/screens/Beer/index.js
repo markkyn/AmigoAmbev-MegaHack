@@ -35,6 +35,7 @@ export default function BeerDesc({ navigation }) {
                         <TextView>
                             <Logo
                                 source={coronaLogo}
+                                style={{tintColor: "#f1f1f1"}}
                                 tintColor="#f1f1f1"
                             />
                             <View

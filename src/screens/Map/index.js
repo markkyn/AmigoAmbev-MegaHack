@@ -1,6 +1,6 @@
 import React from 'react';
 import MapView, { Marker, Callout } from 'react-native-maps';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Platform } from 'react-native';
 
 import Header from '../../components/Header';
 
@@ -59,6 +59,7 @@ export default function MapScreen({ navigation }) {
     return (
         <>
         <Header
+            paddingBar= {Platform.OS === 'ios'? 30 : 0}
             onIconPress={() => navigation.navigate('Home')}
             Icon='home'
         />
