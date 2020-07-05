@@ -28,8 +28,9 @@ yarn install
 <p><img src="https://lh3.googleusercontent.com/CXa1RKnWbKLIfoAqyZCEROI-7WpbBW0J8T-XldxFP9LyvwL_wYd2sIWsXY7EVZK4Wy8K8DBEycls3oGEiWhkLIRVCQxFl2YSovIGRDBVcQnn9eZ2Lf2FjvjQrxtsWRY3D1aBz1fV7e0WeunUoKHkx7RSRDAGLG3-QlZcuv7kCpsl0vxTKsMHOW-H9Pcic7xHMkbsx3GdNHai0FkGNBDbD_tI1Yt2IFbqBDsLx34LyxCLpDIloWFfitVrabHc47sxdAoA6h92AW5oG7RTDRYVMNUe64xMj9PRYOOhZJYR75eFjW_bbT021T4IXZWibo5sRhCqK0ubLx2HsEYBVCGIVaGVu6qM2p3-JNwn7AQhDRBIOlLV7C4t5-JFM4ua2Y1-pxPNctwQpJit2Bg1dwurAihi_-ihP8evkAGilcDKBofPl23DcQKTtDmAx--lIzuyo8RbKCH_bO2lZyw5FXLE5uPiqhgSXCyZ57CYO9nXECt4hr-i7yXBkXLZ8ERTy15OBKkzAFZkxoh_mLFtlwl9BYXBQNXMOaFIVTnlMQw8N_6UFfR4yIvCzbQrLgSFo87dObWhSmSzw0JIwkchC5451i9EM_xg_AJiksw4XOv06P0oe0GBcnrvppqKUo2_aBhSl1aSfSwCnNZVAKWaylcgqIOnz5eAma8fao-lzcIaSyDH6RpLKeO7UiGbivy51A=w611-h567-no?authuser=0" alt="QR Code"></p>
 <pre><code>{"name":"Lorem Ipsum Vinhos","description":"Você ganhou 10 reais","avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHhYmNfeRYHLjKlRhMhPlgYkkXPYfZPvVY3g&amp;usqp=CAU"}
 </code></pre>
-<p>Para a versão prototipada foi utilizado QRCode do estilo Text, que sera convertido em um Objeto JavaScrpit atraves do:<br>
-JSON.parse( #QRCODE.DATA# ).</p>
+<p>Para a versão prototipada foi utilizado QRCode do estilo Text, que sera convertido em um Objeto JavaScrpit atraves do:</p>
+<pre><code>JSON.parse( #QRCODE.DATA# ). 
+</code></pre>
 <p>Visamos utilizar um servidor no back-end para gerenciar todas as validações e segurança dos Cupoms e AmbevPoints.</p>
 <h2 id="equipe">Equipe:</h2>
 
