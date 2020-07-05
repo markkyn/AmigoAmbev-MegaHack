@@ -11,7 +11,7 @@
 <h2 id="instalação-e-uso">Instalação e Uso:</h2>
 <p>Para utilizar a primeira versão do Aplicativo é necessário ter o Expo, um FrameWork e plataforma pra aplicações React, instalado no dispositivo mobile.</p>
 <p>Com o Git instalado no computador execute:</p>
-<pre><code>git clone "link_deste_repositório"
+<pre><code>git clone https://github.com/mark-git-404/AmigoAmbev-MegaHack.git
 </code></pre>
 <p>ou baixe o repositório zipado.</p>
 <p>Com o repositório em seu computador, basta executar:</p>
