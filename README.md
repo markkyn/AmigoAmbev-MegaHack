@@ -42,7 +42,7 @@
 </ol>
 <h3 id="via-expo-tunnel">Via Expo Tunnel:</h3>
 <p>Para facilitar no acesso à aplicação, manteremos um Expo Tunnel aberto entre os dias <em><strong>05/07 e 10/07</strong></em></p>
-<pre><code>exp://pb-du8.anonymous.amigo-ambev.exp.direct:80
+<pre><code>exp://pb-du8.mark0909.amigo-ambev.exp.direct:80
 </code></pre>
 <p>Basta entrar com esse link, no browser do celular com Expo instalado.</p>
 <blockquote>
