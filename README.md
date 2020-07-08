@@ -67,6 +67,7 @@ yarn install
 <p>Ele abrirá uma página do browser em seu localhost:19000, contendo um QR Code. Assim, escaneie o QR Code ou entre com o link <em>“exp://”</em> em caso de <em>iOS</em>.</p>
 <h2 id="qr-code">QR CODE</h2>
 <p><img src="https://lh3.googleusercontent.com/6entAjpcTsVWcK7OP_e_PcK-Km8BZwgvvUkx2mlykG4fWQGvFUXNlpgl4irn74kxCbYmlArsxcs0WRpCcprRc2xLSJn8KuIyViz-jIXesrC8RA1rwzZK9pFpARHJNilgV7OfQlpEnMHXGt58xISR0mGHYECMdjuIS0TFCWvkg2Ar6A-vEYEPTOcAqzWzWYDyASfeiSLPqU84JyurQj02XFQIhtRIwToMMS85p4pKCV7zkPrThjtNeGfGOTLdVh8y4UynVC2ibJuZ1zPh6wdUzsMBs2idHOQsvOWCG78ij0FSS9Bk6P8-TFjXs8wtKYjMsOICT54SzzbYoUJTP345KzBXzP6ZAoyb3SCm2wkkB-UgZUgwXeoIycqoYTB3AVlFi6PCt5EP8jxwP5_atQkr9wH9MGM8Rf9CnQQFcI86is4TT-qBXaY9DpnIDZD38jyuEScqAEuQicfT7ncFUAIwtZdllqHZti0zuP-FxjZ6zbPpK_Cniz4R3aiHKbhyfu2S4IIm03QVDMF9HuSxwD7KUvfVPYDohUhiVmbn60xKXTynS6Xsd1JuEo485QfCMuTWdx2cmifjfsxfqJk9xhOtXM58nQg3Ky4DelckMKwpkuzYrHZkMiVxjSsUNG_s1dRxkTRu79Kn78kwYKnMdupfLgv-86Q8pPBWAZItMieXmruieV4WpVL0jXihV4Q-qsez_hFCMOo=s611-w611-h567-no?authuser=0" alt="QR Code"></p>
+<p>UTILIZE O "Screenshot_45.png" como QRCODE</p>
 <pre><code>{"name":"Lorem Ipsum Vinhos","description":"Você ganhou 10 reais","avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHhYmNfeRYHLjKlRhMhPlgYkkXPYfZPvVY3g&amp;usqp=CAU"}
 </code></pre>
 <p>Para a versão prototipada foi utilizado QRCode do estilo Text, que sera convertido em um Objeto JavaScrpit atraves do:</p>
